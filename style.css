@@ -401,6 +401,27 @@ section {
   color: black;
   border-color: rgb(163, 163, 163);
 }
+.about-containers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates three columns of equal width */
+  gap: 20px; /* This is the space between the grid items */
+}
+
+@media (max-width: 768px) {
+  .about-containers {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .about-containers {
+    grid-template-columns: 1fr; /* One column for small screens */
+    flex-direction: column; /* For Flexbox */
+  }
+  .details-container {
+    flex: 0 0 100%; /* For Flexbox, each item takes full width */
+  }
+}
 
 /* CONTACT */
 
