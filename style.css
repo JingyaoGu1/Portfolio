@@ -405,7 +405,7 @@ section {
 }
 .about-containers {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Creates three columns of equal width */
+  grid-template-columns: repeat(3, 1fr); /* Creates three columns of equal width */
   gap: 20px; /* This is the space between the grid items */
 }
 
@@ -429,6 +429,7 @@ section {
 /* CONTACT */
 
 #contact {
+  margin-top: 800px;
   display: flex;
   justify-content: center;
   flex-direction: column;
